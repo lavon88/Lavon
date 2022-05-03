@@ -19,7 +19,16 @@ while ans != '2' : #Loops the program until the user enters the end key "2"
       print('"Invalid Sales Amount"')
     except Exception as sa:
       print('"Sales Amount Must be A Number"')
-  salesperson_number = input("Please enter Salesperson Number ")
+      
+    while True: 
+    try:
+      salesperson_number = int(input("Please enter Salesperson Number "))
+      if sales_amount > 0:
+        break
+      print('"Invalid Salesperson Number"')
+    except Exception as sa:
+      print('"Input Must be A Number"')   
+  
 #This will repeat the request for the user to input a class number until a
 #valid number is entered. Only 1, 2 or 3 will be accepted as valid.
   while True:
