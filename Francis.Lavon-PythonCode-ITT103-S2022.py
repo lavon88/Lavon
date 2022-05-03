@@ -33,7 +33,7 @@ while ans != '2' : #Loops the program until the user enters the end key "2"
 #valid number is entered. Only 1, 2 or 3 will be accepted as valid.
   while True:
       try:
-        class_number = int(input("Please select Sales1person Class 1,2 or 3 "))
+        class_number = int(input("Please select Salesperson Class 1,2 or 3 "))
         if class_number > 0 and class_number < 4:
           break
         else:
